@@ -47,7 +47,7 @@
     "@nodenv/node-build-update-defs": "^2.11.3",
     "bats": "^1.13.0",
     "bats-assert": "^2.2.2",
-    "bats-mock": "^1",
+    "bats-mock": "^1.2.5",
     "bats-support": "^0.3.0"
   }
 }
