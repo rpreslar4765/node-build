@@ -29,7 +29,6 @@ lib() {
     ARGUMENTS=()
     EXTRA_ARGUMENTS=()
     local arg option index
-
     while [ $# -gt 0 ]; do
       arg="$1"
       if [ "$arg" == "--" ]; then
@@ -642,7 +641,7 @@ build_package() {
   local package_name="$1"
   shift
 
-  if [ "$#" -eq 0 ]; then
+  if [ "$#" -eq 0 ] || [ "$1" = "standard" ]; then
     local commands="standard"
   else
     local commands="$*"
